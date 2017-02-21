@@ -1,0 +1,50 @@
+body{background:#ffa800;}
+/*顶部导航栏*/
+#wrapNav{width:1338px;height:46px;border:1px solid red;padding-left:105px;
+	background-color:f3#f3f3;padding-right: 105px;}
+.top_nav{width:100%;height:46px;margin:0 auto;border: 1px solid blue;}
+/*顶部导航栏左边区域*/
+.left_zone{overflow: hidden;}
+.logo{width:120px;height: 46px;background: url(../img/logo@2x.png) no-repeat 0 center;
+	background-size:96px 32px;line-height: 46px;}
+.searchBox{width:200px;height: 46px;}
+.searchBox #search{width:180px;height: 30px;margin-top: 7px;border-radius: 25px;outline: none;border:1px solid #cccccc;
+line-height: 30px;background: url(../img/glass.png) no-repeat 2px center;background-size: 24px 24px;/*这里可以改变光标的位置*/padding-left:26px;}
+/*顶部导航栏右边区域*/
+.right_zone ul{width:200px;height: 46px;display: block;line-height: 46px;}
+.right_zone li{float:right;display: inline-block;width:40px;margin-left: 2px;}
+.right_zone li a{font-size: 16px;color:#575757;display: block;margin-left:5px;}
+.right_zone li a:hover{color:orange;}
+
+
+/*主体部分*/
+#main{width:1080px;margin:0 auto;margin-top:20px;overflow:hidden;border:1px solid red;}
+.right_main{width:280px;border: 1px solid black;}
+.left_main{width:780px;border: 1px solid black;}
+.personal{height:130px;background-color:#f3f3f3 ;border-radius: 5px;
+	/*边框阴影设置*/
+box-shadow: 1px 3px 5px #c4c4c4;}
+.personal_captain{height:55px;padding:5px;border-bottom: 1px solid #a2a2a2}
+.personal_content{height:75px;overflow: hidden;}
+/*个人信息部分*/
+.personal_content #register{margin:0 auto;width:80px;display: block;height: 26px;
+border-radius: 5px;border:1px solid #c8c8c8;
+background: -webkit-linear-gradient(#ffffff, #c8c8c8); /* Safari 5.1 - 6.0 */
+background: -o-linear-gradient(#ffffff, #c8c8c8); /* Opera 11.1 - 12.0 */
+background: -moz-linear-gradient(#ffffff, #c8c8c8); /* Firefox 3.6 - 15 */
+background: linear-gradient(#ffffff,#c8c8c8);}
+.personal_content p{font-size: 12px;text-align: center;}
+/*广告部分*/
+.ad{height: 290px;background-color:#f3f3f3;margin-top: 20px; border-radius: 5px;
+box-shadow: 1px 3px 5px #c4c4c4;}
+.ad_top{height: 270px;padding:10px;background: url(../img/ad.png) no-repeat center center;
+background-size:80%;}
+.ad_bottom{height: 20px;background-color: #d7d7d7;}
+.ad_bottom a{text-align:center;display: block;line-height: 20px;}
+/*最热节点部分*/
+.hot_node{height: 200px;background-color:#f3f3f3; }
+.hot_node .node_item1{height: 35px;padding:5px;}
+.hot_node .node_item2{height: 128px;padding:5px;}
+.hot_node .node_item3{height: 37px;padding:2px;background: url(../img/rss.png) no-repeat 6px center;
+background-size:10%; border:1px solid blue;}
+.hot_node .node_item3 a{margin-left:35px;line-height: 33px;}
