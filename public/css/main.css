@@ -1,7 +1,7 @@
 body{background:#ffa800;}
 /*顶部导航栏*/
 #wrapNav{width:1338px;height:46px;border:1px solid red;padding-left:105px;
-	background-color:f3#f3f3;padding-right: 105px;}
+	background-color:#f3f3f3;padding-right: 105px;}
 .top_nav{width:100%;height:46px;margin:0 auto;border: 1px solid blue;}
 /*顶部导航栏左边区域*/
 .left_zone{overflow: hidden;}
@@ -42,9 +42,58 @@ background-size:80%;}
 .ad_bottom{height: 20px;background-color: #d7d7d7;}
 .ad_bottom a{text-align:center;display: block;line-height: 20px;}
 /*最热节点部分*/
-.hot_node{height: 200px;background-color:#f3f3f3; }
-.hot_node .node_item1{height: 35px;padding:5px;}
+.hot_node{height: 200px;background-color:#f3f3f3; margin-top: 20px;border-radius: 5px;}
+.hot_node .node_item1{height: 35px;padding:5px;border-bottom: 1px solid #a2a2a2;}
 .hot_node .node_item2{height: 128px;padding:5px;}
 .hot_node .node_item3{height: 37px;padding:2px;background: url(../img/rss.png) no-repeat 6px center;
 background-size:10%; border:1px solid blue;}
 .hot_node .node_item3 a{margin-left:35px;line-height: 33px;}
+.nodeItem{font-size: 12px;line-height: 12px;display: inline-block;padding:4px 10px 4px 10px;
+border-radius: 12px;border: 1px solid #cccccc;margin-top:6px;margin-left:4px;}
+.nodeItem:hover{box-shadow: 1px 1px 2px #c4c4c4;}
+.node_item1 strong{font-size: 12px;color:#c4c4c4;line-height: 20px;}
+/*最近新增节点部分*/
+.new_node{height: 216px;background-color:#f3f3f3; margin-top: 20px;border-radius: 5px;}
+.newNode_top{height: 36px;border-bottom: 1px solid #a2a2a2;padding: 5px;}
+.newNode_top strong{font-size: 12px;color:#c4c4c4;line-height: 26px;}
+.newNode_bottom{padding:5px;}
+/*社区运行状况部分*/
+.status{height: 174px;background-color:#f3f3f3;margin-top: 20px; border-radius: 5px;}
+.status_top{height: 35px;border-bottom: 1px solid #a2a2a2;padding: 5px;}
+.status_top strong{font-size: 12px;color:#c4c4c4;line-height: 20px;}
+.status_middle{height: 78px;border-bottom: 1px solid #a2a2a2;padding: 8px;}
+.status_p{font-size: 14px;color:#c4c4c4;margin-top: 6px;}
+.status_bottom{height: 61px;padding: 6px;}
+.statusBottom_p{display: inline-block;font-size: 12px;color:#575757;}
+/*热议主题部分_标题*/
+.hot{margin-top: 20px;}
+.hot_captain{height: 35px;background-color:#f3f3f3;padding: 5px;border-bottom: 1px solid #a2a2a2; }
+.hot_captain strong{font-size: 12px;color:#c4c4c4;line-height: 25px;}
+/*热议主题部分_主体部分用表格来写*/
+.cell{height: 52px;padding: 5px;background-color: #f3f3f3;border-bottom: 1px solid #a2a2a2;}
+.cell table{margin-top:6px;}
+.td_left{width:24px;
+/*设置里面的元素垂直居中*/
+vertical-align: middle;}
+.avast{max-height: 24px;max-width: 24px;border:0;border-radius: 4px;}
+.td_middle{width:10px;}
+/*剩下的一个td宽度设为auto*/
+.td_right{width:auto;vertical-align: center;}
+.td_right a{font-size: 13px;/*这里调整字行与行的间距*/line-height: 15px;}
+
+/*主体左半部分--节点导航*/
+.node_nav{background-color: #f3f3f3;}
+.nodeNav_captain{height: 35px;line-height: 35px;border-bottom:1px solid #a2a2a2;
+padding-left:5px;padding-right:5px;}
+.nodeNav_captain strong{font-size: 12px;color:#c4c4c4;}
+.nodeNav_captain b{font-weight:bold;}
+.nodeNav_captain a{float: right;display: inline-block;font-size: 12px;}
+.nodeNav_content{padding:10px 5px 10px 5px;border-bottom:1px solid #a2a2a2;}
+.td_title{width:70px;vertical-align: center;}
+.td_title strong{font-size: 12px;color:#c4c4c4;float: right;vertical-align: center;}
+.td_space{width:10px;}
+.td_content{width:auto;vertical-align: center;}
+.td_content a{margin-left: 8px;}
+.td_content a:first-child{margin-left:0;}
+.td_content a:last-child{border-bottom: 0;}
+
