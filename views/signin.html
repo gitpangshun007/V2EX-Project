@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>signin</title>
+	<link rel="stylesheet" href="../public/css/bootstrap-theme.css" />
+	<link rel="stylesheet" href="../public/css/bootstrap.css" />
+	<link rel="stylesheet" href="../public/css/main.css" />
+	<link rel="stylesheet" href="../public/css/reset.css">
+	<script src="../public/js/bootstrap.js"></script>
+	<script src="../public/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+  <!-- header -->
+   <div id="wrapNav">
+   	 <div class="top_nav">
+   	 	<div class="left_zone fl">
+   	 		<div class="logo fl"></div>
+   	 		<div class="searchBox fl">
+   	 				<label for="search"></label>
+   	 				<input type="text" id="search"/> 
+   	 		</div>
+   	 	</div>
+   	 	<div class="right_zone fr clearfix">
+   	 		<ul>
+   	 			<li><a href="#">登录</a></li>
+   	 			<li><a href="#">注册</a></li>
+   	 			<li><a href="#">首页</a></li>
+   	 		</ul>
+   	 	</div>
+   	 </div>
+   </div>
+<div id="main">
+     <!-- 主体左半部分 -->
+	 <div class="left_main fl clearfix">
+	 	<div class="register_zone">
+	 		<div class="register_captain"><strong><b>V2EX</b> / 节点导航</strong></div>
+	 		<div id="need_signin"><span>你查看的页面需要先登录</span></div>
+	 		<div class="register_content">
+	 			<form action="post">
+	 				<table>
+	 					<tbody>
+	 						<tr>
+	 							<td class="register_td_left">用户名</td>
+	 							<td class="register_td_right">
+	 								<label for="username"></label>
+	 								<input type="text" id="username" name="username" value="" /><br/><span>请使用半角的 a-z 或数字 0-9</span>
+	 							</td>
+
+	 						</tr><br/><br/>
+
+	 						<tr>
+	 							<td class="register_td_left">密码</td>
+	 							<td class="register_td_right">
+	 								<label for="password"></label>
+	 								<input type="password" id="password" name="password" value="">
+	 							</td>
+	 						</tr>
+	 					</tbody>
+	 				</table>
+	 				   <label for="submit"></label>
+                       <input type="submit" name="submit" id="submit" value="立即登录" /><br/>
+                       <span class="forget_password"><a href="#">我忘记密码了</a></span>
+	 			</form>
+	 		</div>
+	 	</div>
+  </div>
+	 <!-- 主体右半部分 -->
+	 <div class="right_main fr clearfix">
+	    <!-- 未登录时的个人信息部分 -->
+	 	<div class="personal">
+	 		<div class="personal_captain">
+	 		<br/>
+	 			<b>其他登录方式</b><br /><br />
+	 		</div>
+	 		<div class="google_login">
+	 			<a href="#" onclick=""></a>
+	 		</div>
+	 	</div>
+  </div>
+</div>
+<br/><br/><br/>
+<!-- 底部footer区域 -->
+<div id="footer">
+  	<div class="partner">
+  		<ul>
+  			<li><a>关于</a><strong>.</strong></li>
+  			<li><a>FAQ</a><strong>.</strong></li>
+  			<li><a>API</a><strong>.</strong></li>
+  			<li><a>我们的愿景</a><strong>.</strong></li>
+  			<li><a>广告投放</a><strong>.</strong></li>
+  			<li><a>鸣谢</a><strong>.</strong></li>
+  			<li><b>2032 人在线</b></li>
+  			<li><b>最高记录 2447</b></li><strong>.</strong>
+  		</ul>
+  	</div>
+  	<div class="copyright">
+  	<strong>创意工作者们的社区</strong><br/><br/>
+  	<strong>World is powered by solitude</strong><br/><br/><br/>
+  	<b>VERSION: 3.9.7.5 · 25ms · UTC 02:06 · PVG 10:06 · LAX 18:06 · JFK 21:06</b><br/><br/>
+  	<b>♥ Do have faith in what you're doing.</b><br/>
+  	</div>
+  	<div class="info"><a href="#">沪ICP备16043287号-1</a></div>
+  	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</div>
+</body>
+</html>
