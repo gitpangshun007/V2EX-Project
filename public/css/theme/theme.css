@@ -1,0 +1,21 @@
+/*换肤模块*/
+#skin{
+	padding:5px;margin-left:10px;border:1px solid #c6c6c6;overflow: hidden;
+	margin-top: 8px;
+}
+/*用sprite图的时候要用background-image*/
+#skin li{float:left;margin-left: 5px;width:15px;height:15px;background-image:url("theme.gif");cursor: pointer;/*这里可以让文字消失*/text-indent: -999px;
+display: block;}
+#skin_0{background-position: 0 0;}
+#skin_1{background-position: -20px 0;}
+#skin_2{background-position: -40px 0;}
+#skin_3{background-position: -60px 0;}
+#skin_4{background-position: -80px 0;}
+#skin_5{background-position: -100px 0;}
+/*注意id和class一起的写法*/
+#skin_0.select{background-position: 0 15px;}
+#skin_1.select{background-position: -20px 15px;}
+#skin_2.select{background-position: -40px 15px;}
+#skin_3.select{background-position: -60px 15px;}
+#skin_4.select{background-position: -80px 15px;}
+#skin_5.select{background-position: -100px 15px;}

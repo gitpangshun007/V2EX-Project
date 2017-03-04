@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>signin</title>
+	<title>note_edit</title>
 	<link rel="stylesheet" href="../public/css/bootstrap-theme.css" />
 	<link rel="stylesheet" href="../public/css/bootstrap.css" />
 	<link rel="stylesheet" href="../public/css/main.css" />
@@ -23,7 +23,7 @@
    	 	</div>
    	 	<div class="right_zone fr clearfix">
    	 		<ul>
-   	 		     <li><a href="signin.html">登录</a></li>
+   	 			  <li><a href="signin.html">登录</a></li>
           <li><a href="signup.html">注册</a></li>
           <li><a href="../index.html">首页</a></li> 
    	 		</ul>
@@ -31,50 +31,29 @@
    	 </div>
    </div>
 <div id="main">
-     <!-- 主体左半部分 -->
-	 <div class="left_main fl clearfix">
-	 	<div class="register_zone">
-	 		<div class="register_captain"><strong><a href="../index.html">V2EX</a> / 节点导航</strong></div>
-	 		<div id="need_signin" onclick="hideDiv()"><span>你查看的页面需要先登录</span></div>
-	 		<div class="register_content">
-	 			<form action="post">
-	 				<table>
-	 					<tbody>
-	 						<tr>
-	 							<td class="register_td_left">用户名</td>
-	 							<td class="register_td_right">
-	 								<label for="username"></label>
-	 								<input type="text" id="username" name="username" value="" /><br/><span>请使用半角的 a-z 或数字 0-9</span>
-	 							</td>
-
-	 						</tr><br/><br/>
-
-	 						<tr>
-	 							<td class="register_td_left">密码</td>
-	 							<td class="register_td_right">
-	 								<label for="password"></label>
-	 								<input type="password" id="password" name="password" value="">
-	 							</td>
-	 						</tr>
-	 					</tbody>
-	 				</table>
-	 				   <label for="submit"></label>
-                       <input type="submit" name="submit" id="submit" value="立即登录" /><br/>
-                       <span class="forget_password"><a href="#">我忘记密码了</a></span>
-	 			</form>
-	 		</div>
-	 	</div>
-  </div>
+<!-- 主体左半部分 -->
+<div class="left_main fl clearfix">
+<!-- 左侧部分 	 -->
+   <div class="note_edit clearfix">
+   	 <div class="note_edit_captain">
+   	 	<div class="note_edit_text fl"><a href="../index.html">V2EX</a><a href="#">/记事本</a><span>/新建记事</span>
+      </div>   	
+   	 </div>
+   	 <div class="note_edit_content clearfix">
+         <textarea name="note_edit" id="note_edit" cols="100" rows="15"></textarea>
+         <div class="note_edit_content_option"></div>
+         <div class="note_edit_content_save"></div>
+   	 </div>
+   </div>
+</div>
 	 <!-- 主体右半部分 -->
-	 <div class="right_main fr clearfix">
-	    <!-- 未登录时的个人信息部分 -->
-	 	<div class="personal">
-	 		<div class="personal_captain">
-	 		<br/>
-	 			<b>其他登录方式</b><br /><br />
-	 		</div>
-	 		<div class="google_login">
-	 			<a href="#" onclick=""></a>
+  <div class="right_main fr clearfix">
+      <div class="note_right">
+	 	<div class="note_count">
+	 		<span>文件数</span><strong>0</strong>
+	 	</div>
+	 		<div class="note_discuess">
+	 			<a href="#" onclick="">讨论 V2EX 的记事本功能</a>
 	 		</div>
 	 	</div>
   </div>
@@ -104,11 +83,5 @@
   	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </div>
-<script type="text/javascript">
-	function hideDiv(){
-		var signBar=document.getElementById("need_signin");
-		signBar.style.display="none";
-	}
-</script>
 </body>
 </html>

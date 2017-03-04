@@ -29,7 +29,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* common */
 body { font-size:14px; -webkit-font-smoothing: antialiased;font-family: "Helvetica Neue", "Xin Gothic", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimSun",  "Droid Sans Fallback", "sans-serif";}
 a {text-decoration:none; }
-a:hover { text-decoration:none;color:#FFB400; }
+
+/*a:hover { text-decoration:none;color:#FFB400; }*/
 em,i{font-style: normal;}
 img{border:none;}
 /*清除浮动*/
@@ -38,4 +39,3 @@ img{border:none;}
 /*浮动*/
 .fl{float:left;}
 .fr{float:right;}
-

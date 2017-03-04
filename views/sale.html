@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>V2EX</title>
+	<link rel="stylesheet" href="../public/css/bootstrap-theme.css" />
+	<link rel="stylesheet" href="../public/css/bootstrap.css" />
+	<link rel="stylesheet" href="../public/css/main.css" />
+	<link rel="stylesheet" href="../public/css/reset.css" />
+  <link rel="stylesheet" href="../public/css/jquery.jqzoom.css">
+<!-- tooltip效果 -->
+    <link rel="stylesheet" href="../public/css/tooltip.css" />
+<!-- 换肤模块要引用的CSS -->
+    <link rel="stylesheet" href="../public/css/theme/theme.css" />
+    <link rel="stylesheet" href="../public/css/theme/skin_0.css" id="cssfiles" />
+<!-- 点击清晰图片遮罩 -->
+    <link rel="stylesheet" href="../public/css/thickbox.css" />
+<!-- 引用bootstrap和jquery -->
+	<script src="../public/js/bootstrap.js"></script>
+<!-- 	<script src="../public/js/jquery-3.1.1.js"></script> -->
+  <script src="../public/js/jquery-1.5.js"></script>
+<!-- zoom插件 -->
+  <script src="../public/js/plugin/jquery.jqzoom-core.js"></script>
+<!-- 点击清晰图片遮罩 -->
+  <script type="text/javascript" src="../public/js/plugin/jquery.thickbox.js"></script>
+</head>
+<body>
+<!-- header -->
+   <div id="wrapNav">
+   	 <div class="top_nav">
+   	 	<div class="left_zone fl">
+   	 		<div class="logo fl"><a href="index.html"></a></div>
+   	 		<div class="searchBox fl">
+   	 				<label for="search"></label>
+   	 				<input type="text" id="search" value="请输入要查询的内容" /> 
+   	 		</div>
+            <div class="change_color fl">
+                <ul id="skin">
+                    <li id="skin_0" title="灰色" class="select">灰色</li>
+                    <li id="skin_1" title="绿色">绿色</li>
+                    <li id="skin_2" title="橙色">橙色</li>
+                    <li id="skin_3" title="蓝色">蓝色</li>
+                    <li id="skin_4" title="红色">红色</li>
+                    <li id="skin_5" title="紫色">紫色</li>
+                </ul>
+            </div>
+   	 	</div>
+   	 	<div class="right_zone fr clearfix">
+   	 		<ul>
+<!-- 未登录的内容 -->	
+   	 		    <li><a href="views/signin.html">登录</a></li>
+   	 			<li><a href="views/signup.html">注册</a></li>
+   	 			<li><a href="index.html">首页</a></li>    
+<!-- 登录后的内容 -->
+   	 			<!-- <li><a href="#">登出</a></li>
+   	 			<li><a href="#">设置</a></li>
+   	 			<li><a href="#">时间轴</a></li>
+   	 			<li><a href="#">记事本</a></li>
+   	 			<li><a href="#">工作空间</a></li>
+   	 			<li><a href="#">pangshun008</a></li>
+   	 			<li><a href="#">首页</a></li>   -->       
+   	 		</ul>
+   	 	</div>
+   	 </div>
+   </div>
+<!-- main -->
+<div id="main">
+     <!-- 主体左半部分 -->
+	 <div class="left_main fl clearfix">
+   <div id="sale">
+         <div class="sale_tab clearfix">
+             <span>产品推荐</span>
+             <div class="tab_right fr">
+             <ul>
+                 <li><a href="#">iPad</a></li>
+                 <li><a href="#">iPhone</a></li>
+                 <li><a href="#">iMac</a></li>
+                 <li><a href="#">MacBook</a></li>
+             </ul>
+             </div>
+         </div>
+         <div class="production">
+             <ul>
+                 <li><a href="#"><img src="../public/img/product/clean.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/laptop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/loop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/power.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/TV.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/clean.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/laptop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/loop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/power.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/TV.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/clean.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/laptop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/loop.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/power.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/TV.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+                 <li><a href="#"><img src="../public/img/product/power.jpg" alt=""></a><span><a href="#">iPad</a></span></li>
+             </ul>
+         </div>
+    </div>
+<!-- 产品信息详情部分 -->
+   <div id="decription" class="clearfix">
+<!-- 产品信息详情左边 -->
+     <div class="des_left fl">
+       <div class="des_img">
+       <a href="../public/img/clothes/blue_one_big.jpg" class="jqzoom" title="蓝色衣服大图" rel="gal1">
+         <img src="../public/img/clothes/blue_one_small.jpg" alt="310X310图片" title="蓝色衬衫310图片">
+        </a>
+       </div>
+       <div class="des_zoom">
+<!-- 点击大图片遮罩效果 -->
+         <a id="thickimg" class="thickbox" href="../public/img/clothes/blue_one_big.jpg"><img src="../public/img/look.gif" alt="查看清晰图片" title="查看清晰图片"></a>
+       </div>
+<!-- 点击小图切换大图 -->
+       <div class="des_img_small clearfix">
+         <ul>
+           <li><a href="javascript:void(0)" rel="{gallery:'gal1',smallimage:
+           '../public/img/clothes/blue_one_small.jpg',largeimage:'../public/img/clothes/blue_one_big.jpg'}"><img src="../public/img/clothes/blue_one.jpg" alt=""></a></li>
+           <li><a href="javascript:void(0)" rel="{gallery:'gal1',smallimage:
+           '../public/img/clothes/blue_two_small.jpg',largeimage:'../public/img/clothes/blue_two_big.jpg'}"><img src="../public/img/clothes/blue_two.jpg" alt=""></a></li>
+           <li><a href="javascript:void(0)" rel="{gallery:'gal1',smallimage:
+           '../public/img/clothes/blue_three_small.jpg',largeimage:'../public/img/clothes/blue_three_big.jpg'}"><img src="../public/img/clothes/blue_three.jpg" alt=""></a></li>
+         </ul>
+       </div>
+       <div class="des_tab_title clearfix">
+         <ul>
+           <li><a href="#">产品属性</a></li>
+           <li><a href="#">产品尺码表</a></li>
+           <li><a href="#">产品介绍</a></li>
+         </ul>
+       </div>
+       <div class="des_tab_content">
+         <div><span>沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。</span></div>
+         <div class="hide"><span>来自新疆无污染的生态棉花，采用紧密纺精梳棉纱，单经双纬的织造组织，造就了颗粒饱满、朴实无华、温润细腻的经典牛津纺，易洗快干、手感丰软、吸湿性好。设计师遵循布料完美肌理，立体剪裁，曲摆的现代人性化裁减，相得益彰，浑然天成。</span></div>
+         <div class="hide"><span>世界权威德国科德宝的衬和英国高士缝纫线使成衣领型自然舒展、永不变形，缝线部位平服工整、牢固耐磨；人性化的4片式后背打褶结构设计提供更舒适的活动空间；领尖扣的领型设计戴或不戴领带风格炯同、瞬间呈现；醇正天然设计，只为彰显自然荣耀。</span></div>
+       </div>
+     </div>
+<!-- 产品信息详情右边 -->
+     <div class="des_right fr">
+       <ul>
+         <h2>免烫高支棉条纹衬衣</h2><br />
+         <li class="clothes_title"><span>
+全新精品高支棉衬衫再次提升品质，精选100%新疆长绒棉织造而成，平整度好，短绒少； 80-100高支双股经纬交织，带来无与伦比的舒适享受；而且面料反光效果好，具有漂亮的光泽，质感上佳，有利于免烫效果的维持！</span></li>
+         <li><span class="throughLine">价　　格： <strong>379.00元</strong></span></li>
+         <li><span class="discount_price">促　　销： <em>200.00元</em></span></li>
+         <li id="clothesColor">颜　　色： <strong>未选择颜色</strong><strong class="hide">蓝白</strong><strong class="hide">黄白</strong><strong class="hide">粉绿</strong></li>
+         <li class="clothes_color clearfix">
+           <ul>
+             <li><a href="#"><img src="../public/img/clothes/blue.jpg" alt=""></a></li>
+             <li><a href="#"><img src="../public/img/clothes/yellow.jpg" alt=""></a></li>
+             <li><a href="#"><img src="../public/img/clothes/green.jpg" alt=""></a></li>
+           </ul>
+         </li>
+         <li id="clothesSize"><span>尺　　寸： <strong class="hide">S</strong class="hide"><strong class="hide">L</strong>
+         <strong class="hide">SL</strong class="hide"><strong class="hide">LL</strong><strong>未选择</strong></span>
+         </li>
+         <li class="clothes_size clearfix">
+           <ul>
+             <li><a href="#">S</a></li>
+             <li><a href="#">L</a></li>
+             <li><a href="#">SL</a></li>
+             <li><a href="#">LL</a></li>
+           </ul>
+         </li>
+         <li>
+           <span>数量：</span>
+         </li>
+         <li>
+           <select name="clothes_number" id="clothesNumber">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+           </select>
+         </li>
+         <li id="clothes_price">
+           <span>总计：<strong>200</strong>元</span>
+         </li>
+<!-- 商品评分区域 -->
+         <li><span>给商品评分：</span></li>
+         <li class="clothes_star clearfix">
+           <ul class="rating clearfix">
+             <li class="one" title="1"><a href="#"></a></li>
+             <li class="two" title="2"><a href="#"></a></li>
+             <li class="three" title="3"><a href="#"></a></li>
+             <li class="four" title="4"><a href="#"></a></li>
+             <li class="five" title="5"><a href="#"></a></li>
+           </ul>
+         </li>
+         <li id="cart">
+           <a href="#"><img src="../public/img/btn_cart.png" alt="加入购物车"></a>
+         </li>
+       </ul>
+     </div>
+   </div>
+   </div>
+  <!-- 主体右半部分 -->
+   <div class="right_main fr clearfix">
+<!-- 未登录时的个人信息部分 -->
+    <div class="personal">
+      <div class="personal_captain">
+        <b>V2EX = way to explore</b><br /><br />
+        <i>V2EX 是一个关于分享和探索的地方</i>
+      </div>
+      <div class="personal_content">
+        <label for="register"></label>
+        <input type="submit" id="register" name="submit" value="现在注册" onclick="javascript:window.location.href='views/signup.html'"><br />
+        <p>已注册用户请<a href="#">   登录</a></p>
+      </div>
+    </div>
+<!-- 登录后的个人信息部分 -->
+       <!-- <div class="login_zone">
+         <div class="login_zone_sub1 clearfix">
+          <a href="#" class="login_zone_avast"></a>
+          <span><a href="#" class="login_zone_name">pangshun008</a></span>
+         </div>
+         <div class="login_zone_sub2 clearfix">
+          <a href="#"><span>0</span><br/><div class="space"></div><span>节点收藏</span></a>
+          <a href="#"><span>0</span><br/><div class="space"></div><span>主题收藏</span></a>
+          <a href="#"><span>0</span><br/><div class="space"></div><span>特别关注</span></a>
+         </div>
+         <div class="login_zone_sub3 clearfix">
+           <div class="progress">
+             <div class="progress-bar" role="progressbar" aria-valuenow="60" 
+              aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+               <span class="sr-only">40% 完成</span>
+             </div>
+           </div>
+         </div>
+         <div class="login_zone_sub4 clearfix">
+          <a href="#" class="left_item"></a>
+          <span><a href="#" class="right_item">创作新主题</a></span>
+         </div>
+         <div class="login_zone_sub5 clearfix">
+          <a href="#" class="left_text">0 条未读提醒</a>
+          <a href="#" class="right_button">20<span></span></a>
+         </div>
+       </div> -->
+<!-- 广告区域 -->
+    <div class="ad">
+      <div class="ad_top"></div>
+      <div class="ad_bottom"><a href="#">广告</a></div>
+    </div>
+<!-- 热议主题区域 -->
+    <div class="hot">
+      <div class="hot_captain"><strong>今日热议主题</strong></div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第1个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+            <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第2个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第3个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第4个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第5个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第6个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第7个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第8个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cell">
+        <table>
+          <tbody>
+            <tr>
+            <!-- 注意这里关于a标签中包含图片的写法 -->
+            <td class="td_left"><a href="#"><img src="../public/img/avast.jpg" class="avast" alt=""></a></td>
+            <td class="td_middle"></td>
+            <td class="td_right"><a href="#" title="这是第9个提示">有没有那种无限流量的上网卡，我想去公园里面写代码？</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<!-- 最热节点区域 -->
+    <div class="hot_node">
+      <div class="node_item1"><strong>最热节点</strong></div>
+      <div class="node_item2">
+        <a href="#" class="nodeItem">问与答</a>
+        <a href="#" class="nodeItem">分享发现</a>
+        <a href="#" class="nodeItem">酷工作</a>
+        <a href="#" class="nodeItem">程序员</a>
+        <a href="#" class="nodeItem">macOS</a>
+        <a href="#" class="nodeItem">Python</a>
+        <a href="#" class="nodeItem">Andriod</a>
+        <a href="#" class="nodeItem">Apple</a>
+        <a href="#" class="nodeItem">iPhone</a>
+        <a href="#" class="nodeItem">Linux</a>
+        <a href="#" class="nodeItem">iDev</a>
+        <a href="#" class="nodeItem">MacBook Pro</a>
+      </div>
+      <div class="node_item3"><a href="#">RSS</a></div>
+    </div>
+    <div class="new_node">
+      <div class="newNode_top"><strong>最近新增节点</strong></div>
+      <div class="newNode_bottom">
+        <a href="#" class="nodeItem">田宫模型</a>
+        <a href="#" class="nodeItem">Hue</a>
+        <a href="#" class="nodeItem">MacType</a>
+        <a href="#" class="nodeItem">SNES</a>
+        <a href="#" class="nodeItem">怀旧游戏</a>
+        <a href="#" class="nodeItem">NES</a>
+                <a href="#" class="nodeItem">Kirby</a>
+                <a href="#" class="nodeItem">Nintendo Switch</a>
+                <a href="#" class="nodeItem">2017</a>
+                <a href="#" class="nodeItem">AMP</a>
+                <a href="#" class="nodeItem">Daydream</a>
+                <a href="#" class="nodeItem">Electron</a>
+                <a href="#" class="nodeItem">算法</a>
+                <a href="#" class="nodeItem">华为</a>
+                <a href="#" class="nodeItem">RescueTime</a>
+                <a href="#" class="nodeItem">DaoCloud</a>
+                <a href="#" class="nodeItem">Wireshark</a>
+                <a href="#" class="nodeItem">NAS</a>
+                <a href="#" class="nodeItem">Pixel</a>
+                <a href="#" class="nodeItem">统计学</a>
+      </div>
+    </div>
+    <div class="status">
+      <div class="status_top"><strong>社区运行状况</strong></div>
+      <div class="status_middle">
+        <p class="status_p">注册会员&nbsp&nbsp&nbsp215369</p>
+        <p class="status_p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp主题  &nbsp&nbsp&nbsp335320</p>
+        <p class="status_p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp回复&nbsp&nbsp&nbsp4050842</p>
+      </div>
+      <div class="status_bottom">
+        &gt<a href="#" class="statusBottom_p">财富排行榜</a><br/><br/>
+        &gt<a href="#" class="statusBottom_p">消费排行榜</a>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!-- 底部footer区域 -->
+  <div id="footer">
+    <div class="partner">
+      <ul>
+        <li><a>关于</a><strong>.</strong></li>
+        <li><a>FAQ</a><strong>.</strong></li>
+        <li><a>API</a><strong>.</strong></li>
+        <li><a>我们的愿景</a><strong>.</strong></li>
+        <li><a>广告投放</a><strong>.</strong></li>
+        <li><a>鸣谢</a><strong>.</strong></li>
+        <li><b>2032 人在线</b></li>
+        <li><b>最高记录 2447</b></li><strong>.</strong>
+      </ul>
+    </div>
+    <div class="copyright">
+    <strong>创意工作者们的社区</strong><br/><br/>
+    <strong>World is powered by solitude</strong><br/><br/><br/>
+    <b>VERSION: 3.9.7.5 · 25ms · UTC 02:06 · PVG 10:06 · LAX 18:06 · JFK 21:06</b><br/><br/>
+    <b>♥ Do have faith in what you're doing.</b><br/>
+    </div>
+    <div class="info"><a href="#">沪ICP备16043287号-1</a></div>
+  </div>
+<!-- 首页交易信息点击轮播效果 -->
+  <script type="text/javascript" src="../public/js/sale_roll.js"></script>
+<!-- 首页帖子主题的特效 -->
+   <script type="text/javascript" src="../public/js/topic.js"></script>
+<!-- 搜索框聚焦特效 -->
+   <script type="text/javascript" src="../public/js/search_focus.js"></script>
+<!-- 换肤效果 -->
+   <script type="text/javascript" src="../public/js/skin.js"></script>
+<!-- tooltip效果 -->
+   <script type="text/javascript" src="../public/js/tooltip.js"></script>
+<!-- 广告大图轮播效果 -->
+   <script type="text/javascript" src="../public/js/adroll.js"></script>
+<!-- 详情页JS特效 -->
+   <script type="text/javascript" src="../public/js/detail.js"></script>
+<!-- zoom放大镜 -->
+<script type="text/javascript" src="../public/js/plugin/use_jqzoom.js"></script>
+<!-- <script>
+  function no(){
+  var no2=document.getElementById("no2");
+  if(no2.style.display!="none"){
+    no2.style.display="none";
+  }else{
+    no2.style.display="";
+  }
+}
+window.onload=no();
+</script> -->
+</body>
+</html>
